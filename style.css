@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+	background: #FDFC47;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #24FE41, #FDFC47);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #24FE41, #FDFC47); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	
+
+	color: white;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+hr{
+	border: 1px solid white;
+}
+
+.container {
+	padding: 40px;
+	margin: 0 auto;
+}
+
+.container-img{
+	padding-left: 30vw;
+	padding-right: 30vw;
+}
+
+
+h1 {
+	text-align: center;
+	font-size: 54px;
+}
+
+strong{
+	color: black;
+	padding-right: 5px;
+}
+
+.characters {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
+	grid-gap: 20px;
+	padding-inline-start: 0;
+}
+
+.card {
+	list-style: none;
+	color: white;
+	text-align: center;
+	border-radius: 20px;
+	position: relative;
+	display: flex;
+	background: rgba(0, 0, 0, 0.3);
+	transition: transform .2s;
+}
+
+.card:hover {
+	cursor: pointer;
+	transform: scale(1.03);
+}
+
+.card-link{
+	text-decoration: none;
+	list-style: none;
+}
+
+.card-content{
+	padding-left: 50px;
+	text-align: left;
+}
+
+.card-title {
+	text-transform: capitalize;
+	margin-bottom: 0px;
+	font-size: 32px;
+	font-weight: normal;
+	position: relative;
+	z-index: 2;
+}
+
+.card-subtitle {
+	margin-top: 5px;
+	color: white;
+	font-weight: lighter;
+	position: relative;
+	z-index: 2;
+}
+
+.card-image {
+	position: relative;
+	z-index: 2;
+	border-radius: 20px 0px 0px 20px ;
+}
