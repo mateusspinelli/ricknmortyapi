@@ -1,7 +1,7 @@
 const getRicknmortyUrl = id => `https://rickandmortyapi.com/api/character/${id}`
 
 
-const generateRicknmortyPromises = () => Array(671).fill().map((_, index) =>
+const generateRicknmortyPromises = () => Array(100).fill().map((_, index) =>
 fetch(getRicknmortyUrl(index + 1)).then(response => response.json()))
 
 const generateHTML =  ricknmorty => ricknmorty.reduce((accumulator, {image, id, name, species, gender, status, origin, location}) => {
